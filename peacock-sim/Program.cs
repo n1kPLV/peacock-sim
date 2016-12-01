@@ -75,8 +75,9 @@ namespace peacocksim
                     {
                         foreach (Peacock pfau in pfauen)
                         {
-                            int rr = rand.Next(1, arg2 + arg3);
-                            if (rr >= arg3)
+                            //Stupid C# O_o
+                            int rr = rand.Next(1, arg2 + arg3+1);
+                            if (rr <= arg3)
                             {
                                 pfau.moveEnemy(i);
                             }
@@ -92,7 +93,7 @@ namespace peacocksim
                         logLine.Append(pfau.getTotalSuccessors());
                         logLine.Append(";");
                     }
-                    Console.WriteLine(logLine.ToString());
+                    //Console.WriteLine(logLine.ToString());
                     log.WriteLine(logLine.ToString());
                 }
                 log.Close();
