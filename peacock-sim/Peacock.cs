@@ -32,8 +32,8 @@ namespace peacocksim
         public void movePartner(int round)
         {
             //variables
-            int diceroll1 = rand.Next(1, 6);
-            int diceroll2 = rand.Next(1, 6);
+            int diceroll1 = rand.Next(1, 7);
+            int diceroll2 = rand.Next(1, 7);
             int tmpattractivity = attractivity;
             bool endofround = false;                //var to jump to mark end of move
 
@@ -72,8 +72,8 @@ namespace peacocksim
         public void moveEnemy(int round)
         {
             //variables
-            int diceroll1 = rand.Next(1, 6);
-            int diceroll2 = rand.Next(1, 6);
+            int diceroll1 = rand.Next(1, 7);
+            int diceroll2 = rand.Next(1, 7);
             bool endofround = false;            //var to jump to mark end of move
 
             //don't do anything if dead or hurt

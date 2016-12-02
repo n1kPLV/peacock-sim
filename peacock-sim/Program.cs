@@ -21,7 +21,7 @@ namespace peacocksim
 
             if (args.Length >= 4)
             {
-                if (File.Exists(args[3]))
+                if (File.Exists(@args[3]))
                 {
                     Console.WriteLine("Given File exists. Ignoring");
                     file = Path.GetTempFileName() + ".csv";
@@ -30,8 +30,8 @@ namespace peacocksim
                 {
                     try
                     {
-                        File.Create(args[4]);
-                        file = args[4];
+                        File.Create(@args[4]);
+                        file = @args[4];
                     }
                     catch (Exception)
                     {
