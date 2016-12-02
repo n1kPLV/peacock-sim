@@ -30,8 +30,8 @@ namespace peacocksim
                 {
                     try
                     {
-                        File.Create(@args[4]);
-                        file = @args[4];
+                        File.Create(args[3]);
+                        file = args[3];
                     }
                     catch (Exception)
                     {
